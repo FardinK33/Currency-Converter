@@ -1,0 +1,50 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  h1 {
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    top: 10%;
+  }
+}
+
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color: white, $alpha: .1);
+  background-clip: padding-box;
+  backdrop-filter: blur(25px);
+  height: 50%;
+  width: 60%;
+  border-radius: 5px;
+  padding: 1.5rem 2rem;
+
+  .exchange-btn {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transform: rotate(90deg);
+    border: none;
+    background-color: hwb(250 60% 0%);
+    cursor: pointer;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    transition: width .5s;
+  }
+}
